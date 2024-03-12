@@ -1,0 +1,28 @@
+#header {
+    .navbar {
+        li {
+            margin-top: 10px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0%;
+                display: block;
+                background-color: #fe7900;
+                height: 3px;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all 0.3s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+            a {
+                font-size: 15px;
+                font-weight: 700;
+
+            }
+        }
+    }
+}

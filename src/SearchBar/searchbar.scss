@@ -1,0 +1,22 @@
+div#searchBar {
+    div#timPhim,
+    div#cumRap,
+    div#lichChieu {
+        position: relative;
+        border-right: 1px solid #ccc;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            bottom: -3px;
+            left: 50%;
+            display: block;
+            transform: translateX(-50%);
+            transition: all 0.3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
