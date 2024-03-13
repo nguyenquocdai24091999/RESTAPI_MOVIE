@@ -47,7 +47,7 @@ export default function Banner() {
           />
         </div>
       </Carousel>
-      <SearchBar/>
+      {/* <SearchBar/> */}
     </div>
   );
 }

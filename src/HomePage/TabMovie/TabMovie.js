@@ -23,6 +23,7 @@ export default function TabMovie() {
         label: <img src={ele.logo} style={{ width: 50 }} />,
         children: (
           <Tabs
+
             style={{
               height: 500,
               border: 2,
