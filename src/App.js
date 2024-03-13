@@ -7,6 +7,7 @@ import SignPage from "./SignIn/SignPage";
 import Register from "./Register/Register";
 import Layout from "./template/Layout";
 import Booking from "./Booking/Booking";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             element={
               <Layout>
                 <Booking />
+                
               </Layout>
             }
           />
