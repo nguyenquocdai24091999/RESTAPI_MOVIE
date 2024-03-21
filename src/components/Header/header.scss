@@ -26,3 +26,33 @@
         }
     }
 }
+@media screen and (max-width: 1024px) {
+    #menu {
+        display: block;
+        flex-direction: column;
+    }
+    #header {
+        display: none;
+    }
+    #movie {
+        span {
+            min-width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #menu {
+        font-size: 50%;
+        display: inline-flex;
+    }
+}
+@media screen and (max-width: 640px) {
+    #menu {
+        min-width: "100%";
+    }
+    #movie {
+        span {
+            min-width: 48%;
+        }
+    }
+}

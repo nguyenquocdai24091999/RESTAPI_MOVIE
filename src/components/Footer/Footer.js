@@ -13,7 +13,7 @@ export default function Footer() {
           height: "100%",
         }}
       >
-        <div className="container grid grid-cols-5 gap-5">
+        <div className="container grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           <div>
             <img
               style={{ width: 200, height: 200 }}

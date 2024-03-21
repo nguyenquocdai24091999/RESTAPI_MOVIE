@@ -60,7 +60,7 @@ export default function DetailPage() {
             {htr.cumRapChieu.map((ele, index) => {
               return (
                 <div key={index} className="py-5 pr-5">
-                  <div className="flex items-center pb-3 border-b-2 border-zinc-200">
+                  <div className="md:flex items-center pb-3 border-b-2 border-zinc-200">
                     <img
                       src={ele.hinhAnh}
                       width={100}
@@ -135,8 +135,8 @@ export default function DetailPage() {
             }}
           ></div>
         </div>
-        <div className="pt-80 pb-40" style={{ background: "#081418" }}>
-          <div className="grid grid-cols-4 gap-10" id="detailMovieDesktop">
+        <div className=" pt-40 pb-80 md:pt-80 md:pb-40" style={{ background: "#081418" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10" id="detailMovieDesktop">
             <div>
               <img
                 loading="lazy"
@@ -171,7 +171,6 @@ export default function DetailPage() {
                   closeIcon={<i className="fa-solid fa-x text-white"></i>}
                   center
                 >
-                  <span>câccâccâc</span>
                   <ReactPlayer
                     controls={true}
                     url={detail.trailer}
@@ -181,17 +180,17 @@ export default function DetailPage() {
                 </Modal>
               </div>
             </div>
-            <div className="col-span-2 text-white">
+            <div className="col-span-2 text-white md:flex">
               <div className="space-y-7" style={{ fontSize: "20px" }}>
-                <div className="grid grid-cols-3 gap-1">
+                <div className="grid grid-cols-3  gap-1">
                   <p> -Tên phim : </p>
                   <p className="col-span-2"> {detail.tenPhim} </p>
                 </div>
-                <div className="grid grid-cols-3 gap-1">
+                <div className="grid grid-cols-3  gap-1">
                   <p>- Ngày Chiếu :</p>
                   <p>{moment(detail.ngayKhoiChieu).format("DD-MM-YYYY")}</p>
                 </div>
-                <div className="grid grid-cols-3 gap-1">
+                <div className="grid grid-cols-3  gap-1">
                   <p>- Giờ Chiếu :</p>
                   <p>{moment(detail.ngayKhoiChieu).format("hh:mm:ss")}</p>
                 </div>
@@ -213,7 +212,7 @@ export default function DetailPage() {
               <Rate className="mt-4" allowHalf value={detail.danhGia / 2} />
             </div>
           </div>
-          <div>
+          <div id="tabs">
             <Tabs
             id="cumRapChieu"
               className="container border-2 border-gray-100"

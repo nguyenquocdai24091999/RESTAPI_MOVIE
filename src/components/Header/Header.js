@@ -53,7 +53,7 @@ export default function Header() {
     }
   };
   return (
-    <div className="flex justify-between shadow-md space-y-5 items-center">
+    <div id="movie" className=" flex justify-between shadow-md space-y-5 items-center">
       <span
         onClick={() => {
           navigate("/");
@@ -64,7 +64,7 @@ export default function Header() {
         {" "}
         Movie Theater{" "}
       </span>
-      <div className="uppercase space-x-5 font-bold" id="header">
+      <div className=" uppercase space-x-5 font-bold" id="header">
         <ul className="flex space-x-8 navbar">
           <li className="hover:text-orange-500 cursor-pointer">
             <a href="">lịch chiếu</a>
@@ -80,7 +80,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
-      <div className="mb-10 mr-10 space-x-5 uppercase">{renderMenu()}</div>
+      <div id="menu" className="mb-10 mr-10 space-x-5 uppercase">{renderMenu()}</div>
     </div>
   );
 }

@@ -22,3 +22,24 @@
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
 }
+@media screen and (max-width: 1024px) {
+    #tabs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #tabs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 450px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #tabs {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+}

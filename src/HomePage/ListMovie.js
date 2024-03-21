@@ -21,8 +21,8 @@ export default function ListMovie() {
       });
   }, []);
   return (
-    <div className="grid grid-cols-5 gap-3 py-10">
-      {movieArr.splice(0, 10).map((ele, index) => {
+    <div className="grid grid-cols-1 justify-between w-full py-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-10 lg:py-10">
+      {movieArr.splice(0, 8).map((ele, index) => {
         return (
           <Card
             onClick={() => {
@@ -31,7 +31,7 @@ export default function ListMovie() {
             key={index}
             hoverable
             style={{
-              width: 360,
+              width: 340,
             }}
             cover={<img alt="example" src={ele.hinhAnh} className="h-96" />}
           >

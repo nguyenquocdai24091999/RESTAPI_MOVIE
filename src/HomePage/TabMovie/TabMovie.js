@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { https } from "../../api/config";
 import { Tabs, Tooltip } from "antd";
 import ItemMovie from "./ItemMovie";
+import "./tabmovie.scss"
 
 export default function TabMovie() {
   const [heThongRap, setHeThongRap] = useState([]);
@@ -23,7 +24,6 @@ export default function TabMovie() {
         label: <img src={ele.logo} style={{ width: 50 }} />,
         children: (
           <Tabs
-
             style={{
               height: 500,
               border: 2,
@@ -43,10 +43,10 @@ export default function TabMovie() {
                   </div>
                 ),
                 children: (
-                  <div className="space-x-5"
+                  <div id="itemmovie" className="space-y-5 "
                   style={{height: 500, overflow: "scroll"}}>
                     {cumRap.danhSachPhim.map((phim) => {
-                      return <ItemMovie data={phim} key={phim.maPhim} />;
+                      return  <ItemMovie data={phim} key={phim.maPhim} />;
                     })}
                   </div>
                 ),
